@@ -51,7 +51,7 @@ listener = keyboard.Listener(
 listener.start()
 
 while True:
-    os.system("cls")
+    os.system("clear") # Для windows - cls, для MacOS - clear
     my_map.process_helicopter(helico, clouds)
     helico.print_stats()
     my_map.print_map(helico, clouds)
